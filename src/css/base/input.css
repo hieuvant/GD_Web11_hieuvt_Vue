@@ -1,0 +1,23 @@
+input {
+    height: 32px;
+    width: 360px;
+    border: 1px solid #ccc;
+    outline: unset;
+    border-radius: 4px;
+    padding: 0 12px;
+}
+
+.input-search {
+    background-image: url(../../icons/Ic_seerch.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 8px);
+    background-position-y: center;
+}
+
+.input-number {
+    width: 72px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+}

@@ -1,0 +1,93 @@
+.tb-paging{
+    overflow-y: auto;
+    height: calc(100vh - 180px);
+}
+
+table {
+    font-size: 14px;
+    width: 100%;
+}
+
+table thead {
+    background-color: #f5f5f5;
+    color: #001031;
+}
+
+table tbody {
+    background-color: #ffffff;
+}
+
+table tr {
+    height: 40px;
+}
+
+table tbody tr:hover {
+    background-color: rgba(26, 164, 200, .2);
+    cursor: pointer;
+}
+
+table th,
+table td {
+    padding: 0 16px;
+    border-bottom: 1px solid #afafaf;
+}
+
+th{
+    position: sticky;
+    top:0;
+    background-color: #f5f5f5;
+}
+
+.number-marin {
+    text-align: center;
+}
+
+.number-left {
+    text-align: left;
+}
+
+.number-left-name {
+    text-align: left;
+    color: #03AE66;
+}
+
+.checkbox-table {
+    width: 13px;
+    height: 13px;
+}
+
+.table-checklist {
+    background-image: url(./../../icons/ic_Check.png);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    margin: 0 auto;
+}
+
+.btn-edit {
+    border: unset;
+    background: url(./../../icons/ic_Edit.png);
+    background-size: 28px 28px;
+    width: 28px;
+    height: 28px;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-remove {
+    border: unset;
+    background: url(./../../icons/ic_Remove.png);
+    background-size: 28px 28px;
+    width: 28px;
+    height: 28px;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit+.btn-remove {
+    margin-left: 5px;
+}

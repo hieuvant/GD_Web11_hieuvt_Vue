@@ -1,0 +1,57 @@
+@import url(./base/combobox.css);
+@import url(./base/button.css);
+@import url(./base/input.css);
+@import url(./base/table.css);
+@import url(./layout/header.css);
+@import url(./layout/sidebar.css);
+@import url(./layout/page.css);
+@import url(./icofont/icofont.css);
+@import url(./icofont/icofont.min.css);
+@import url(./base/dialog.css);
+
+@font-face {
+    font-family: Regular;
+    src: url(./../Fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Opbold;
+    src: url(./../Fonts/OpenSans-Bold.ttf);
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Regular;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Regular;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main {
+    background-color: #EAECEF;
+    flex: 1;
+    padding: 8px;
+    height: calc(100vh - 44px);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
