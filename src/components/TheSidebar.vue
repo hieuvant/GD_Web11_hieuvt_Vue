@@ -16,31 +16,31 @@
     <div class="sidebar-item-body">
       <div class="sidebar-item">
         <div
-          class="icon-sidebar icon1"
+          class="icon-sidebar overview-icon"
         ></div>
         <div class="sidebar-item-text">Tổng quan</div>
       </div>
       <div class="sidebar-item">
         <div
-          class="icon-sidebar icon2"
+          class="icon-sidebar device-icon"
         ></div>
         <div class="sidebar-item-text">Thiết bị</div>
       </div>
       <div class="sidebar-item">
         <div
-          class="icon-sidebar icon3"
+          class="icon-sidebar payment-icon"
         ></div>
         <div class="sidebar-item-text">Mượn trả</div>
       </div>
       <div class="sidebar-item">
         <div
-          class="icon-sidebar icon4"
+          class="icon-sidebar report-icon"
         ></div>
         <div class="sidebar-item-text">Báo cáo</div>
       </div>
       <div class="sidebar-item">
         <div
-          class="icon-sidebar icon5"
+          class="icon-sidebar system-icon"
         ></div>
         <div class="sidebar-item-text">Hệ thống</div>
       </div>

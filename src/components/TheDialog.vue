@@ -36,11 +36,6 @@
                                                     <div class="color-text-dialog">*</div>
                                                     <div class="dialog-el-2">
                                                         <input id="txtEmployeeCode" type="text" class="input-stt-dialog-left">
-                                                        <!-- <div class="dialog-el-2-error
-                                                            dialog-el-right--error">
-                                                            Số hiệu cán bộ không
-                                                            được bỏ trống
-                                                        </div> -->
                                                     </div>
                                                 </div>
                                                 <div class="phone-dialog">
@@ -84,11 +79,6 @@
                                                     <div class="color-text-dialog">*</div>
                                                     <div class="dialog-el-0">
                                                         <input type="text" id="txtEmployeeName" class="input-name-dialog-right">
-                                                        <!-- <div class="dialog-el-0-error
-                                                            dialog-el-left--error">
-                                                            Họ và tên không được
-                                                            bỏ trống
-                                                        </div> -->
                                                     </div>
                                                 </div>
                                                 <div class="email-dialog">

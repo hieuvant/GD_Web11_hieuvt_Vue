@@ -1,0 +1,27 @@
+.icon-sidebar-home {
+    height: 30px;
+    width: 30px;
+    margin-left: 12px;
+    margin-right: 8px;
+    background: url(./../../icons/ic_IconThietBi.svg);
+}
+
+.overview-icon {
+    background: url(./../../icons/ic_TongQuan.svg);
+}
+
+.device-icon {
+    background: url(./../../icons/ic_ThietBi.svg);
+}
+
+.payment-icon {
+    background: url(./../../icons/ic_MuonTra.svg);
+}
+
+.report-icon {
+    background: url(./../../icons/ic_BaoCao.svg);
+}
+
+.system-icon {
+    background: url(./../../icons/ic_HeThong.svg);
+}

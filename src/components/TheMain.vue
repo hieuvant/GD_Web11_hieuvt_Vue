@@ -13,7 +13,6 @@
           ><button class="btn-output">Xuất Khẩu</button
           ><button
             class="btn-more-op"
-            style="background-position: -628px -972px"
           ></button>
         </div>
       </div>
@@ -55,448 +54,6 @@
                 ><button class="btn-remove"></button>
               </td>
             </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">NV00001</td>
-              <td class="number-left-name">NGUYỄN MINH HẢI</td>
-              <td class="number-marin">0354534566</td>
-              <td class="number-left">Tổ Toán - Tin</td>
-              <td class="number-left">Toán</td>
-              <td class="number-left">Phòng tin học</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">NV00001</td>
-              <td class="number-left-name">NGUYỄN MINH HẢI</td>
-              <td class="number-marin">0354534566</td>
-              <td class="number-left">Tổ Toán - Tin</td>
-              <td class="number-left">Toán</td>
-              <td class="number-left">Phòng tin học</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">NV00001</td>
-              <td class="number-left-name">NGUYỄN MINH HẢI</td>
-              <td class="number-marin">0354534566</td>
-              <td class="number-left">Tổ Toán - Tin</td>
-              <td class="number-left">Toán</td>
-              <td class="number-left">Phòng tin học</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">NV1234</td>
-              <td class="number-left-name">Test1</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv5591122333</td>
-              <td class="number-left-name">Mai Sơn Trà</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng sản xuất</td>
-              <td class="number-left">Phòng sản xuất</td>
-              <td class="number-left">Phòng sản xuất</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv559901674421</td>
-              <td class="number-left-name">Hồ Văn ANh</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv55990167442</td>
-              <td class="number-left-name">tryng</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv5599057441</td>
-              <td class="number-left-name">Hồ Văn ANh</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv559</td>
-              <td class="number-left-name">Mạnh Nguyễn A</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng đào tạo</td>
-              <td class="number-left">Phòng đào tạo</td>
-              <td class="number-left">Phòng đào tạo</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv559905744544</td>
-              <td class="number-left-name">Nam đế</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv55990167447</td>
-              <td class="number-left-name">Nam dương</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv5599057447</td>
-              <td class="number-left-name">Quách Tĩnh</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv559905744</td>
-              <td class="number-left-name">Dương Khang</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng đào tạo</td>
-              <td class="number-left">Phòng đào tạo</td>
-              <td class="number-left">Phòng đào tạo</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv4811</td>
-              <td class="number-left-name">Mạnh Nguyễn</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv38947388</td>
-              <td class="number-left-name">Mai Sơn Trà</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv88374984</td>
-              <td class="number-left-name">Đào Dương</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng sản xuất</td>
-              <td class="number-left">Phòng sản xuất</td>
-              <td class="number-left">Phòng sản xuất</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv6600</td>
-              <td class="number-left-name">to van tai</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv076393</td>
-              <td class="number-left-name">Nguyen ngoc</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv55990265444762</td>
-              <td class="number-left-name">nam abc</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv5599016744277</td>
-              <td class="number-left-name">Nguyen quang manh</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">NV22012000</td>
-              <td class="number-left-name">Mai Sơn Trà 2345</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng đào tạo</td>
-              <td class="number-left">Phòng đào tạo</td>
-              <td class="number-left">Phòng đào tạo</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nvaung1</td>
-              <td class="number-left-name">nvaung</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv0393113</td>
-              <td class="number-left-name">nvaung</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv267</td>
-              <td class="number-left-name">to van tai</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv9956</td>
-              <td class="number-left-name">ádasasdas</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-left">Phòng tuyển sinh</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="number-marin">
-                <input type="checkbox" class="checkbox-table" />
-              </td>
-              <td class="number-marin">nv55990265444761</td>
-              <td class="number-left-name">Loằng tà loằng ngoằng</td>
-              <td class="number-marin"></td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-left">Phòng nhân sự</td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin"><div class="table-checklist"></div></td>
-              <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
-              </td>
-            </tr>
           </tbody>
         </table>
       </div>
@@ -515,9 +72,15 @@
   </div>
 </template>
 <script>
+import axios from "axios"
 export default {
     name:"TheMain",
     methods: {
+
+    created(){
+          //thực hiện load dữ liệu
+            this.loadData();
+        },
     /** 
   * Hàm mở Dialog
   * Author: TVHieu - MF1485 (15/12/2022)
@@ -529,6 +92,23 @@ export default {
         console.log("error");
       }
     },
+
+    /** 
+  * Hàm load dữ liệu
+  * Author: TVHieu - MF1485 (22/12/2022)
+  */
+             loadData(){
+                //Gọi API:
+                axios.get("https://cukcuk.manhnv.net/api/v1/employees")
+                    .then(res=>{
+                        this.employees = res.data;
+                    })
+                    .catch(error=>{
+                        console.log(error);
+                    })
+                //Gán dữ liệu
+                //Hiển thị lỗi nếu có
+            },
   },
 };
 </script>

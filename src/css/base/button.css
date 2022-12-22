@@ -16,10 +16,67 @@
     background-color: #02BF70;
 }
 
-/* .btn:active{
-    background-color: #02BF70;
-} */
-
 button+button {
     margin-left: 10px;
+}
+
+.btn-more-op {
+    border-radius: 4px;
+    border: 1px solid #D5D8E6;
+    border-width: 1px;
+    background: url(./../../icons/ic_sprites.svg);
+    background-position: -628px -972px;
+    background-color: #ffffff;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.btn-output {
+    border-radius: 4px;
+    border: 1px solid #D5D8E6;
+    border-width: 1px;
+    background-color: #ffffff;
+    min-width: 96px;
+    height: 32px;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-paging-movetofirt {
+    background: url(./../../icons/ic_MoveToFirst.png);
+    width: 20px;
+    height: 20px;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-paging-pre {
+    background: url(./../../icons/ic_Back.png);
+    width: 20px;
+    height: 20px;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-paging-next {
+    background: url(./../../icons/ic_Next.png);
+    width: 20px;
+    height: 20px;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-paging-movetolast {
+    background: url(./../../icons/ic_MoveToLast.png);
+    width: 20px;
+    height: 20px;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
 }
