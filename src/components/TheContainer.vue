@@ -4,7 +4,6 @@
         <div class="content">
         <TheHeader></TheHeader>
         <TheMain></TheMain>
-        <TheDialog></TheDialog>
     </div>
     </div>
 </template>
@@ -12,11 +11,10 @@
 import TheSidebar from './TheSidebar.vue';
 import TheHeader from './TheHeader.vue';
 import TheMain from './TheMain.vue';
-import TheDialog from './TheDialog.vue';
 export default {
     name:"TheContainer",
     components:{
-        TheSidebar, TheHeader, TheMain, TheDialog
+        TheSidebar, TheHeader, TheMain
     }
 }
 </script>

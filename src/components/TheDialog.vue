@@ -1,5 +1,6 @@
 <template>
-    <div v-show="showDialog" id="dialog-teacher-detail" class="dialog" style="display: block;">
+    <!--Thông tin chi tiết giảng viên-->
+    <div id="popup-teacher-detail" class="dialog">
                                 <div class="dialog-weapper">
                                     <div class="dialog-sidebar">
                                         <div class="dialog-avt">
@@ -24,18 +25,29 @@
                                             <div class="dialog-text-header">Thêm
                                                 hồ sơ Cán
                                                 bộ, giáo viên</div>
-                                            <button @click="closeDialog" class="btn-dialog-close" id="btnDialogClose">
+                                            <button @click="onCloseDetail" class="btn-dialog-close" id="btn-close">
                                             </button>
                                         </div>
                                         <div class="dialog_container">
                                             <div class="dialog_container-left">
                                                 <div class="stt-dialog">
-                                                    <div class="text-stt-dialog">Mã
+                                                    <div for="txtTeacherCode" class="text-stt-dialog">Mã
                                                         số hiệu
                                                         cán bộ </div>
                                                     <div class="color-text-dialog">*</div>
-                                                    <div class="dialog-el-2">
-                                                        <input id="txtEmployeeCode" type="text" class="input-stt-dialog-left">
+                                                    <div class="dialog-el">
+                                                        <input 
+                                                         v-model="newTeacher.EmployeeCode"
+                                                         v-bind:class="{'input--error':errors.EmployeeCode}"
+                                                         @blur="validate()" 
+                                                         field-label="Số hiệu cán bộ"
+                                                         ref="txtTeacherCode"
+                                                         type="text" 
+                                                         class="input-stt-dialog-left">
+                                                         <!-- Thêm class input--error nếu errors.EmployeeCode có dữ liệu -->
+                                                         <div class="error-text" v-if="errors.EmployeeCode">
+                                                         {{ errors.EmployeeCode }}
+                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="phone-dialog">
@@ -73,12 +85,23 @@
                                             </div>
                                             <div class="dialog_container-right">
                                                 <div class="name-dialog">
-                                                    <div class="text-name-dialog">Họ
+                                                    <div for="txtTeacherName" class="text-name-dialog">Họ
                                                         và tên
                                                     </div>
                                                     <div class="color-text-dialog">*</div>
-                                                    <div class="dialog-el-0">
-                                                        <input type="text" id="txtEmployeeName" class="input-name-dialog-right">
+                                                    <div class="dialog-el">
+                                                        <input
+                                                        id="txtTeacherName" 
+                                                        v-model="newTeacher.FullName" 
+                                                        v-bind:class="{'input--error':errors.FullName}" 
+                                                        @blur="validate()" 
+                                                        field-label="Họ và tên" 
+                                                        type="text" 
+                                                        class="input-name-dialog-right">
+                                                        <!-- Thêm class input--error nếu errors.FullName có dữ liệu -->
+                                                        <div class="error-text" v-if="errors.FullName">
+                                                        {{ errors.FullName }}
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="email-dialog">
@@ -155,53 +178,129 @@
                                             </div>
                                         </div>
                                         <div class="dialog_footer">
-                                            <button @click="closeDialog" class="btn-close">Đóng
+                                            <button  
+                                            id="btn-close-form-detail"
+                                            @click="onCloseDetail" 
+                                            class="btn-close">Đóng
                                             </button>
-                                            <button id="btnSave" class="btn
-                                                btn-dialog-add">Lưu</button>
+                                            <button 
+                                            id="btn-Save" 
+                                            @click="btnSaveOnClick"
+                                            class="btn btn-dialog-add">Lưu</button>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div id="toastMsg" class="toast-message-container">
-                                    <div class="toast-message">
-                                      <div class="toast-message-left">
-                                        <div class="toast-message-img"></div>
-                                        <div class="toast-message-text">
-                                          <div class="toast-message-title">Lỗi</div>
-                                          <div class="toast-message-content"></div>
-                                        </div>
-                                      </div>
-                                      <div id="toastMsgClose" class="toast-message-close"></div>
-                                    </div>
-                                  </div> -->
-                                  <!-- <div id="toastMsgSucces" class="toast-message-container">
-                                    <div class="toast-message">
-                                      <div class="toast-message-left">
-                                        <div class="toast-message-img-succes"></div>
-                                        <div class="toast-message-text">
-                                          <div class="toast-message-title">Thành Công</div>
-                                        </div>
-                                      </div>
-                                      <div id="toastMsgSuccesClose" class="toast-message-close"></div>
-                                    </div>
-                                  </div> -->
                             </div>
 </template>
 <script>
+// import axios from 'axios';
+import axios from 'axios';
 export default {
     name:"TheDialog",
+    props:["teacherId"],
+    data(){
+            return{
+                errors:{
+                   EmployeeCode:'',
+                   FullName:'',
+                },
+                newTeacher:{
+                   EmployeeCode:'',
+                   FullName:'',
+                }
+            }
+        },
+        created(){
+            let teacherId = this.teacherId;
+            if(teacherId){
+                this.getTeacherId(teacherId);
+            }
+        },
     methods: {
-    /** 
-  * Hàm đóng Dialog
-  * Author: TVHieu - MF1485 (15/12/2022)
-  */
-    closeDialog() {
-      try {
-        document.querySelector(".dialog").style.display = "none";
-      } catch (error) {
-        console.log("error");
-      }
-    },
+        /**
+             * Validate dữ liệu
+             * author : TVHieu - MF1485
+             */
+             validate(){
+                let isValid = true;
+                //Set lại giá trị khi đã validate hoặc đã fill data
+                this.errors = {
+                    EmployeeCode:'',
+                    FullName:'',
+                }
+                if(!this.newTeacher.EmployeeCode){
+                    this.errors.EmployeeCode = "Số hiệu cán bộ không được để trống";
+                    isValid = false
+                }
+                if(!this.newTeacher.FullName){
+                    this.errors.FullName = "Họ tên cán bộ không được để trống";
+                    isValid = false
+                }
+                return isValid;
+            },
+
+             /**
+             * Lưu dữ liệu và Thêm mới
+             * author : TVHieu - MF1485
+             */
+            btnSaveOnClick(){
+                try{
+                    //Validate data
+                    if(this.validate()){
+                        if(this.newTeacher.EmployeeId){
+                            axios.put(`https://cukcuk.manhnv.net/api/v1/Employees/${this.newTeacher.EmployeeId}`,this.newTeacher)
+                                .then((res) => {
+                                    console.log(res.data);
+                                    alert("Thành công");
+                                })
+                                .catch((error)=>{
+                                    console.log(error);
+                                })
+                        }
+                        else{
+                            axios.post("https://cukcuk.manhnv.net/api/v1/Employees",this.newTeacher)
+                                .then((res) => {
+                                    console.log(res.data);
+                                    alert("Thành công");
+                                })
+                                .catch((error)=>{
+                                    console.log(error);
+                                })
+                            return;
+                        }
+                    }
+                }
+                catch(e){
+                    console.log(e);
+                }
+            },
+
+            /**
+             * Đóng form Thêm mới
+             */
+
+            onCloseDetail(){
+                try{
+                    this.$emit("onClose");
+                }
+                catch(e){
+                    console.log(e);
+                }
+            },
+
+            /**
+             * Lấy id của giáo viên cần sửa
+             * 
+             */
+            getTeacherId(teacherId){
+                axios.get(`https://cukcuk.manhnv.net/api/v1/Employees/${teacherId}`)
+                    .then((res) => {
+                        this.newTeacher = res.data
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    })
+            },
   },
 };
 </script>

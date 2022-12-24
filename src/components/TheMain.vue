@@ -8,7 +8,7 @@
       </div>
       <div class="page-header-right">
         <div class="page-button">
-          <button  @click="showDialog" class="btn btn-add" id="btnAdd">
+          <button  @click="btnAddOnClick" class="btn btn-add" id="btn-add">
             Thêm</button
           ><button class="btn-output">Xuất Khẩu</button
           ><button
@@ -37,21 +37,21 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr v-for="(item,index) in employees" :key="index">
               <td class="number-marin">
                 <input type="checkbox" class="checkbox-table" />
               </td>
-              <td class="number-marin">NV00001</td>
-              <td class="number-left-name">NGUYỄN MINH HẢI</td>
-              <td class="number-marin">0354534566</td>
+              <td class="number-marin">{{item.EmployeeCode}}</td>
+              <td class="number-left-name">{{item.FullName}}</td>
+              <td class="number-marin">{{item.PhoneNumber}}</td>
               <td class="number-left">Tổ Toán - Tin</td>
               <td class="number-left">Toán</td>
               <td class="number-left">Phòng tin học</td>
               <td class="number-marin"><div class="table-checklist"></div></td>
               <td class="number-marin"><div class="table-checklist"></div></td>
               <td class="number-marin">
-                <button class="btn-edit"></button
-                ><button class="btn-remove"></button>
+                <button class="btn-edit" alt="" tabindex="0" @click="editData(item.EmployeeId)"></button
+                ><button class="btn-remove" alt="" tabindex="0" @click="deleteData(item.EmployeeId)"></button>
               </td>
             </tr>
           </tbody>
@@ -70,28 +70,21 @@
       </div>
     </div>
   </div>
+  <TheDialog v-if="showDetail" :teacherId="teacherIdSelected" @onClose="onCloseDetail"></TheDialog>
 </template>
 <script>
-import axios from "axios"
+import TheDialog from "@/components/TheDialog.vue";
+import axios from "axios";
 export default {
     name:"TheMain",
-    methods: {
-
-    created(){
-          //thực hiện load dữ liệu
+    components:{
+            TheDialog
+        },
+        created(){
+            //thực hiện load dữ liệu
             this.loadData();
         },
-    /** 
-  * Hàm mở Dialog
-  * Author: TVHieu - MF1485 (15/12/2022)
-  */
-    showDialog() {
-      try {
-        document.querySelector(".dialog").style.display = "flex";
-      } catch (error) {
-        console.log("error");
-      }
-    },
+    methods: {
 
     /** 
   * Hàm load dữ liệu
@@ -106,10 +99,68 @@ export default {
                     .catch(error=>{
                         console.log(error);
                     })
-                //Gán dữ liệu
-                //Hiển thị lỗi nếu có
+            },
+            /**
+            * Hiển form thêm mới dữ liệu
+            * Author : TVHieu - MF1485
+            */
+            btnAddOnClick(){
+                try{
+                    this.showDetail = true;
+                }
+                catch(e){
+                    console.log(e);
+                }
+            }, 
+            /**
+            * Đóng form thêm mới dữ liệu
+            * Author : TVHieu - MF1485
+            */
+            onCloseDetail(){
+                try{
+                    this.showDetail = false;
+                    //Load lại dữ liệu
+                    this.loadData()
+                }
+                catch(e){
+                    console.log(e);
+                }
+            },
+            /**
+             * Edit data
+             * 
+             */
+             editData(id){
+                try{
+                    this.teacherIdSelected = id;
+                    console.log("Edit item : ",this.teacherIdSelected);
+                    this.showDetail = true;
+                }
+                catch(e){
+                    console.log(e);
+                }
+            },
+            /**
+             * Delete Data 
+             * author : TVHieu - MF1485 (24/12/2022)
+             */
+            deleteData(id){
+                try{
+                    axios.delete('https://cukcuk.manhnv.net/api/v1/employees/'+id)
+                        .then(() => this.loadData())
+                }
+                catch(e){
+                    console.log(e);
+                }
             },
   },
+        data(){
+            return{
+                employees:[],
+                showDetail:false,
+                teacherIdSelected: {},
+            }
+        }
 };
 </script>
 <style scoped>
